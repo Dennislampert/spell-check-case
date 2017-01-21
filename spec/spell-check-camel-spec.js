@@ -1,44 +1,44 @@
 'use babel';
 
-import SpellCheckCamle from '../lib/spell-check-camle';
+import SpellCheckCamel from '../lib/spell-check-camel';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('SpellCheckCamle', () => {
+describe('SpellCheckCamel', () => {
   let workspaceElement, activationPromise;
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('spell-check-camle');
+    activationPromise = atom.packages.activatePackage('spell-check-camel');
   });
 
-  describe('when the spell-check-camle:toggle event is triggered', () => {
+  describe('when the spell-check-camel:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.spell-check-camle')).not.toExist();
+      expect(workspaceElement.querySelector('.spell-check-camel')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'spell-check-camle:toggle');
+      atom.commands.dispatch(workspaceElement, 'spell-check-camel:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.spell-check-camle')).toExist();
+        expect(workspaceElement.querySelector('.spell-check-camel')).toExist();
 
-        let spellCheckCamleElement = workspaceElement.querySelector('.spell-check-camle');
-        expect(spellCheckCamleElement).toExist();
+        let spellCheckCamelElement = workspaceElement.querySelector('.spell-check-camel');
+        expect(spellCheckCamelElement).toExist();
 
-        let spellCheckCamlePanel = atom.workspace.panelForItem(spellCheckCamleElement);
-        expect(spellCheckCamlePanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'spell-check-camle:toggle');
-        expect(spellCheckCamlePanel.isVisible()).toBe(false);
+        let spellCheckCamelPanel = atom.workspace.panelForItem(spellCheckCamelElement);
+        expect(spellCheckCamelPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'spell-check-camel:toggle');
+        expect(spellCheckCamelPanel.isVisible()).toBe(false);
       });
     });
 
@@ -51,11 +51,11 @@ describe('SpellCheckCamle', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.spell-check-camle')).not.toExist();
+      expect(workspaceElement.querySelector('.spell-check-camel')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'spell-check-camle:toggle');
+      atom.commands.dispatch(workspaceElement, 'spell-check-camel:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,10 +63,10 @@ describe('SpellCheckCamle', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let spellCheckCamleElement = workspaceElement.querySelector('.spell-check-camle');
-        expect(spellCheckCamleElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'spell-check-camle:toggle');
-        expect(spellCheckCamleElement).not.toBeVisible();
+        let spellCheckCamelElement = workspaceElement.querySelector('.spell-check-camel');
+        expect(spellCheckCamelElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'spell-check-camel:toggle');
+        expect(spellCheckCamelElement).not.toBeVisible();
       });
     });
   });

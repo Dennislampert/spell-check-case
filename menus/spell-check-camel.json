@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle spell-check-camle",
-        "command": "spell-check-camle:toggle"
+        "label": "Toggle spell-check-camel",
+        "command": "spell-check-camel:toggle"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "spell-check-camle",
+          "label": "spell-check-camel",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "spell-check-camle:toggle"
+              "command": "spell-check-camel:toggle"
             }
           ]
         }

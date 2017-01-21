@@ -1,13 +1,13 @@
 {
-  "name": "spell-check-camle",
-  "main": "./lib/spell-check-camle",
+  "name": "spell-check-camel",
+  "main": "./lib/spell-check-camel",
   "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "spell-check-camle:toggle"
+    "atom-workspace": "spell-check-camel:toggle"
   },
-  "repository": "https://github.com/atom/spell-check-camle",
+  "repository": "https://github.com/atom/spell-check-camel",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

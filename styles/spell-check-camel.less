@@ -5,7 +5,7 @@
 @import "ui-variables";
 
 .spell-check-camel {
-    border-bottom: 2px dotted #ff0000;
+    border-bottom: 2px dotted red;
 }
 
 atom-text-editor .highlights {
@@ -16,28 +16,14 @@ atom-text-editor .highlights {
   }
 
   .highlight-selected .region {
-    border-radius: 3px;
     box-sizing: border-box;
     background-color: transparent;
-    border-width: 1px;
-    border-style: solid;
+    border-bottom: 2px dotted red;
   }
 
   // Box
   .highlight-selected .region {
-    border-color: #ddd;
-  }
-  // Background
-  .highlight-selected.background .region {
-    background-color: rgba(155, 149, 0, 0.6);
-  }
-  // Light theme box (set in settings)
-  .highlight-selected.light-theme .region {
-    border-color: rgba(255, 128, 64, 0.4);
-  }
-  // Light theme background (set in settings)
-  .highlight-selected.light-theme.background .region {
-    background-color: rgba(255, 128, 64, 0.2);
+    border-color: red;
   }
 }
 

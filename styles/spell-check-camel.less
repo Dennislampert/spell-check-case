@@ -4,8 +4,9 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
+@underline-color: #F88303;
 .spell-check-camel {
-    border-bottom: 2px dotted red;
+    border-bottom: 2px dotted @underline-color;
 }
 
 atom-text-editor .highlights {
@@ -18,12 +19,12 @@ atom-text-editor .highlights {
   .highlight-selected .region {
     box-sizing: border-box;
     background-color: transparent;
-    border-bottom: 2px dotted red;
+    border-bottom: 2px dotted @underline-color;
   }
 
   // Box
   .highlight-selected .region {
-    border-color: red;
+    border-color: @underline-color;
   }
 }
 

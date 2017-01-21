@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle spell-check-camle",
+        "command": "spell-check-camle:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "spell-check-camle",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "spell-check-camle:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

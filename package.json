@@ -1,5 +1,5 @@
 {
-  "name": "spell-check-camel",
+  "name": "spell-check-case",
   "main": "./lib/spell-check-camel",
   "version": "0.1.0",
   "description": "A short description of your package",
@@ -7,7 +7,7 @@
   "activationCommands": {
     "atom-workspace": "spell-check-camel:toggle"
   },
-  "repository": "https://github.com/atom/spell-check-camel",
+  "repository": "https://github.com/Dennislampert/spell-check-case",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

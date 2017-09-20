@@ -1,6 +1,6 @@
 # spell-check-camel package
 
-Simple spellcheck package with support for camelCase and snak_case
+Simple spellcheck package with support for camelCase and snake_case
 Runs when package is saved. Runs on any file type..
 Needs to be activated one time on a new atom process, then it spellcheck current tab/pain for miss spelled words.
 

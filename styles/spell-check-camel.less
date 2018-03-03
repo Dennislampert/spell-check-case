@@ -5,34 +5,34 @@
 @import "ui-variables";
 
 @underline-color: #F88303;
-.spell-check-camel {
+.spell-check-typo {
     border-bottom: 2px dotted @underline-color;
 }
 
-atom-text-editor .highlights {
-  .highlight.highlight-selected .region {
-    position: absolute;
-    pointer-events: none;
-    z-index: -1;
-  }
-
-  .highlight-selected .region {
-    box-sizing: border-box;
-    background-color: transparent;
-    border-bottom: 2px dotted @underline-color;
-  }
-
-  // Box
-  .highlight-selected .region {
-    border-color: @underline-color;
-  }
-}
-
-status-bar {
-  .highlight-selected-status {
-    display: inline-block;
-  }
-  .highlight-selected-hidden {
-    display: none;
-  }
-}
+// atom-text-editor .highlights {
+//   .highlight.highlight-selected .region {
+//     position: absolute;
+//     pointer-events: none;
+//     z-index: -1;
+//   }
+//
+//   .highlight-selected .region {
+//     box-sizing: border-box;
+//     background-color: transparent;
+//     border-bottom: 2px dotted @underline-color;
+//   }
+//
+//   // Box
+//   .highlight-selected .region {
+//     border-color: @underline-color;
+//   }
+// }
+//
+// status-bar {
+//   .highlight-selected-status {
+//     display: inline-block;
+//   }
+//   .highlight-selected-hidden {
+//     display: none;
+//   }
+// }

@@ -14,8 +14,6 @@ activate command: </br>
 
 ##### spell-check-case is using `spellchecker`: </br>
 link: https://www.npmjs.com/package/spellchecker </br>
-Good to know
-`spellchecker` uses Hunspell.. </br>
 
 
 ##### spell-check-case package doesn't support: </br>

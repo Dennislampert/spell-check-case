@@ -1,11 +1,18 @@
 {
   "name": "spell-check-case",
-  "main": "./lib/spell-check-camel",
-  "version": "0.1.1",
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "main": "./lib/spell-check-case",
+  "version": "1.0.0",
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "spell-check-camel:toggle"
+    "atom-workspace": "spell-check-case:toggle"
   },
   "repository": "https://github.com/Dennislampert/spell-check-case",
   "license": "MIT",

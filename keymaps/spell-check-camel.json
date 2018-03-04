@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "spell-check-camel:toggle"
+    "ctrl-alt-s": "spell-check-camel:toggle"
   }
 }

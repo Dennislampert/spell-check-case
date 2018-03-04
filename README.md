@@ -1,32 +1,44 @@
-# spell-check-camel package
+# spell-check-case package
 
-Simple spellcheck package with support for camelCase and snake_case
-Runs when package is saved. Runs on any file type..
-Needs to be activated one time on a new atom process, then it spellcheck current tab/pain for miss spelled words.
+Simple spellcheck package with support for camelCase and snake_case. </br>
+Runs on save if its activated. </br>
+Runs on any file type (I think)... </br>
+Needs to be activated one time on a new atom process,</br>
 
-activate command:
-`ctrl-alt-o`
+##### Good to know:
+It passes current tab/pain text to Hunspell... </br>
+See `spellchecker` repo for more info. </br>
 
-This is using `spellchecker`, and can be found here:
-https://www.npmjs.com/package/spellchecker
+activate command: </br>
+`ctrl-alt-o` </br>
 
-
-spell-check-camel package doesn't support
-• words like this "doesn't" due to the '
-• it has not implemented any suggestion, witch actually is supported in `spellchecker package`.
-• is doesn't have support to add new words, but is supported `spellchecker package`
-
-It will show a message if it found any miss spelled word on the current file, on save.
-This is to enlighten users that a word might not visible on current scroll height, is miss spelled.
+##### spell-check-case is using `spellchecker`: </br>
+link: https://www.npmjs.com/package/spellchecker </br>
 
 
-Some inspiration is used from package `highlight-selected` and can be found here: https://github.com/richrace/highlight-selected
+##### spell-check-case package doesn't support: </br>
+• Words like this "doesn't" due to the ' </br>
 
-Example 1 camelCase and dash
-https://s3-eu-west-1.amazonaws.com/infracastle/public/images/Screen+Shot+2017-01-21+at+23.06.55.png
+##### Some inspiration is from `highlight-selected` </br>
+link: https://github.com/richrace/highlight-selected </br>
 
-Example 2 snake_case and dash
-https://s3-eu-west-1.amazonaws.com/infracastle/public/images/Screen+Shot+2017-01-21+at+23.07.08.png
+## Examples of how it looks: </br>
+#### Example 1 camelCase and dash </br>
+![](https://s3-eu-west-1.amazonaws.com/infracastle/public/images/Screen+Shot+2017-01-21+at+23.06.55.png) </br>
 
-The bell, showing for 500 milli seconds
-https://s3-eu-west-1.amazonaws.com/infracastle/public/images/Screen+Shot+2017-01-21+at+23.11.14.png
+
+#### Example 2 snake_case and dash </br>
+![](https://s3-eu-west-1.amazonaws.com/infracastle/public/images/Screen+Shot+2017-01-21+at+23.07.08.png)
+</br>
+</br>
+#### Add new words to the spellchecker </br>
+![](https://s3-eu-west-1.amazonaws.com/infracastle/public/images/Screen+Shot+2018-03-04+at+13.54.17.png) <br>
+
+#### A nice little status pencil is showing spelling status <br>
+![](https://s3-eu-west-1.amazonaws.com/infracastle/public/images/Screen+Shot+2018-03-04+at+13.51.25.png)
+</br>
+
+orange if typo is found else its green </br>
+and only shown if spell-check-case is activated </br>
+
+Enjoy or contribute ;)

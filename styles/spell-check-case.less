@@ -4,35 +4,37 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
+
 @underline-color: #F88303;
-.spell-check-camel {
-    border-bottom: 2px dotted @underline-color;
+// the display box at the top
+.spell-check-came {
+    
 }
 
 atom-text-editor .highlights {
-  .highlight.highlight-selected .region {
+  .highlight .spell-check-case {
     position: absolute;
     pointer-events: none;
     z-index: -1;
   }
 
-  .highlight-selected .region {
+  .spell-check-typo-case .region {
     box-sizing: border-box;
     background-color: transparent;
     border-bottom: 2px dotted @underline-color;
   }
 
   // Box
-  .highlight-selected .region {
+  .spell-check-typo-case .region {
     border-color: @underline-color;
   }
 }
 
 status-bar {
-  .highlight-selected-status {
+  .spell-check-typo-case-status {
     display: inline-block;
   }
-  .highlight-selected-hidden {
+  .spell-check-typo-case-hidden {
     display: none;
   }
 }

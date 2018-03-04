@@ -2,8 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle spell-check-camel",
-        "command": "spell-check-camel:toggle"
+        "label": "Toggle spell-check-case",
+        "command": "spell-check-case:toggle"
+      },
+      {
+        "label": "Add Word spell-check-case",
+        "command": "spell-check-case:addWord"
       }
     ]
   },
@@ -12,11 +16,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "spell-check-camel",
+          "label": "spell-check-case",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "spell-check-camel:toggle"
+              "command": "spell-check-case:toggle"
             }
           ]
         }

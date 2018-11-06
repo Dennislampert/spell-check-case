@@ -7,7 +7,7 @@
       },
       {
         "label": "Add Word spell-check-case",
-        "command": "spell-check-case:addWord"
+        "command": "spell-check-case-add-word:addWord"
       }
     ]
   },

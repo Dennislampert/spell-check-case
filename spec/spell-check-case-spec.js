@@ -1,6 +1,6 @@
 'use babel';
 
-import SpellCheckCamel from '../lib/spell-check-case';
+import SpellCheckCamel from '../lib/spell-checker';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
@@ -12,32 +12,32 @@ describe('SpellCheckCamel', () => {
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('spell-check-case');
+    activationPromise = atom.packages.activatePackage('spell-checker');
   });
 
-  describe('when the spell-check-case:toggle event is triggered', () => {
+  describe('when the spell-checker:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.spell-check-case')).not.toExist();
+      expect(workspaceElement.querySelector('.spell-checker')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'spell-check-case:toggle');
+      atom.commands.dispatch(workspaceElement, 'spell-checker:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.spell-check-case')).toExist();
+        expect(workspaceElement.querySelector('.spell-checker')).toExist();
 
-        let spellCheckCamelElement = workspaceElement.querySelector('.spell-check-case');
+        let spellCheckCamelElement = workspaceElement.querySelector('.spell-checker');
         expect(spellCheckCamelElement).toExist();
 
         let spellCheckCamelPanel = atom.workspace.panelForItem(spellCheckCamelElement);
         expect(spellCheckCamelPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'spell-check-case:toggle');
+        atom.commands.dispatch(workspaceElement, 'spell-checker:toggle');
         expect(spellCheckCamelPanel.isVisible()).toBe(false);
       });
     });
@@ -51,11 +51,11 @@ describe('SpellCheckCamel', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.spell-check-case')).not.toExist();
+      expect(workspaceElement.querySelector('.spell-checker')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'spell-check-case:toggle');
+      atom.commands.dispatch(workspaceElement, 'spell-checker:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,9 +63,9 @@ describe('SpellCheckCamel', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let spellCheckCamelElement = workspaceElement.querySelector('.spell-check-case');
+        let spellCheckCamelElement = workspaceElement.querySelector('.spell-checker');
         expect(spellCheckCamelElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'spell-check-case:toggle');
+        atom.commands.dispatch(workspaceElement, 'spell-checker:toggle');
         expect(spellCheckCamelElement).not.toBeVisible();
       });
     });

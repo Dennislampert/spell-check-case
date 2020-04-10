@@ -1,6 +1,6 @@
 'use babel';
 
-import SpellCheckCamelView from '../lib/spell-check-case-view';
+import SpellCheckCamelView from '../lib/spell-checker-view';
 
 describe('SpellCheckCamelView', () => {
   it('has one valid test', () => {

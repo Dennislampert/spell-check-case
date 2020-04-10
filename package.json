@@ -1,5 +1,5 @@
 {
-  "name": "spell-check-case",
+  "name": "spell-checker",
   "consumedServices": {
     "status-bar": {
       "versions": {
@@ -7,17 +7,17 @@
       }
     }
   },
-  "main": "./lib/spell-check-case",
+  "main": "./lib/spell-checker",
   "version": "2.3.0",
-  "description": "A short description of your package",
+  "description": "Powered spell checker",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "spell-check-case:toggle"
+    "atom-workspace": "spell-checker:toggle"
   },
-  "repository": "https://github.com/Dennislampert/spell-check-case",
+  "repository": "https://github.com/marcelkohl/spell-checker",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.45.0 <2.0.0"
   },
   "dependencies": {
     "spellchecker": "^3.3.1"

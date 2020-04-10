@@ -2,12 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle spell-check-case",
-        "command": "spell-check-case:toggle"
+        "label": "Toggle spell-checker",
+        "command": "spell-checker:toggle"
       },
       {
-        "label": "Add Word spell-check-case",
-        "command": "spell-check-case-add-word:addWord"
+        "label": "Add Word spell-checker",
+        "command": "spell-checker-add-word:addWord"
       }
     ]
   },
@@ -16,11 +16,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "spell-check-case",
+          "label": "spell-checker",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "spell-check-case:toggle"
+              "command": "spell-checker:toggle"
             }
           ]
         }
